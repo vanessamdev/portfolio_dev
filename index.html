@@ -5,18 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Vanessa Mendes | Desenvolvedora</title>
+  <title>VM | Developer</title>
 
   <link rel="stylesheet" href="src/styles/style.css" />
-
+  <link rel="icon" type="image/png" href="src/assets/logo-vm">
 </head>
 
 <body>
+    <!-- ---------- CABEÇALHO ---------- -->
   <header class="cabecalho">
+    <div class="cabecalho__logo">
+      <img src="src/assets/logo-vm-removebg-preview.png" alt="Logo VM Developer">
+    </div>
     <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
     <nav class="cabecalho__menu" id="cabecalho-menu">
@@ -31,40 +35,62 @@
   </header>
 
   <main>
-    <section class="apresentacao" id="inicio">
-      <div class="apresentacao__conteudo">
-        <img src="src/assets/perfil.jpg" alt="foto de perfil" class="apresentacao__conteudo__imagem" />
-        <h1 class="apresentacao__conteudo__titulo">Olá, sou a <strong class="titulo-destaque">Vanessa Mendes</strong></h1>
-        <p class="apresentacao__conteudo__texto">
-          Desenvolvedora Full Stack com foco em soluções eficientes para empresas e empreendedores.
-        </p>
-      </div>
-    </section>
+      <!-- ---------- APRESENTAÇÃO (HERO) ---------- -->
+      <section class="apresentacao" id="inicio">
+        <div class="apresentacao__conteudo">
+          <div class="apresentacao__conteudo__texto">
+            <h1>
+              Olá, sou <strong class="titulo-destaque">Vanessa Mendes</strong>
+            </h1>
+            <p class="apresentacao__conteudo__texto">
+            Desenvolvedora <strong class="titulo-destaque">Full-Stack</strong> apaixonada por tecnologia e pela
+            constante busca por aprendizado. Após mais de uma década atuando na
+            área comercial, encontrei na engenharia de software o ambiente
+            perfeito para unir lógica, criatividade e propósito.
+            </p>
+          </div>
 
-    <section class="apresentacao__about" id="sobre">
-      <div class="apresentacao__about__conteudo">
-        <h2 class="apresentacao__about__conteudo__subtitulo">Sobre Mim</h2>
-        <p class="apresentacao__about__conteudo__texto">
-          Sou uma Desenvolvedora Web em formação, com foco em Backend, apaixonada por criar soluções funcionais 
-          e acessíveis. Depois de mais de uma década atuando com atendimento e vendas, iniciei minha transição 
-          para a tecnologia em 2023. Desde então, venho me dedicando ao estudo e aplicação prática de tecnologias 
-          como Java, Spring Boot, React, JavaScript e AWS. Hoje, busco oportunidades para colocar em prática minha 
-          capacidade de adaptação, aprendizado rápido e trabalho em equipe, 
-          enquanto construo minha carreira como engenheira de software.</p>
-      </div>
-    </section>
+          <div class="apresentacao__imagem">
+            <img src="src/assets/perfil-2026.png" alt="Foto de Vanessa Mendes" class="apresentacao__conteudo__imagem" />
+          </div>
+        </div>
+      </section>
 
-    <section class="projetos" id="projetos">
-      <h2>Projetos</h2>
+    <!-- ---------- SOBRE MIM ---------- -->
+      <section class="apresentacao__about" id="sobre">
+        <div class="apresentacao__about__conteudo">
+          <h2 class="apresentacao__about__conteudo__subtitulo">Sobre Mim</h2>
+          <p class="apresentacao__about__conteudo__texto">
+          Atualmente, faço parte do time <strong>Data e GenIA</strong>, explorando soluções inteligentes e escaláveis. Possuo
+          certificação <strong>AWS Cloud Practitioner</strong>, formação em
+          <strong>Desenvolvimento Web Full Stack</strong> e
+          <strong>AWS re/Start</strong>, além de certificações em
+          <strong>Oracle Foundations</strong> e participação em bootcamps de
+          <strong>Análise de Dados</strong> e
+          <strong>Desenvolvimento de Software</strong>.
+          </p><br>
+          <p>Fora das linhas de código, há espaço para o que me inspira: amo caminhar, ler e mergulhar em boas séries —
+          minhas favoritas são <strong>Lúcifer</strong>, <strong>Outlander</strong> e <strong>O Jovem Sheldon</strong>.  
+          Tenho um espírito curioso e eclético, adoro aprender sobre temas diversos e acredito que o conhecimento,
+          em todas as formas, é o que nos mantém em constante evolução.
+          </p>
+        
+          <div class="apresentacao__about__imagem">
+            <img src="src/assets/aws-certified-cloud-practitioner.png" alt="Badge Cloud Practitioner" class="apresentacao__about__imagem"/>
+          </div>  
+        </div>
+      </section>
+
+    <!-- ---------- PROJETOS ---------- -->
+      <section class="projetos" id="projetos">
+      <h2 class="projetos__apresentacao__subtitulo">Projetos</h2>
       <div class="carrossel">
           <button class="carrossel__btn carrossel__btn--esquerda">❮</button>
         <div class="carrossel__container">
           <article class="projetos__apresentacao">
             <img src="src/assets/blog_pessoal.png" alt="Imagem do Blog Pessoal" class="projetos__apresentacao__imagem" />
             <h3 class="projetos__apresentacao__subtitulo">Blog Pessoal</h3>
-            <p class="projetos__apresentacao__texto">
-              Projeto desenvolvido em MYSQL, Java para o Backend e React para o Frontend. Desenvolvida com Spring Boot, seguindo boas práticas de arquitetura, segurança e escalabilidade. 
-              Preparada para integração futura com CMS e API externa.
+            <p class="projetos__apresentacao__texto">Aplicação fullstack com Java + Spring Boot, MySQL e React. Estrutura escalável e segura.  
               <a href="https://frontend-blogpessoal-phi.vercel.app/" target="_blank" rel="noopener noreferrer">link para o repositório</a>.
             </p>
           </article>
@@ -72,8 +98,7 @@
           <article class="projetos__apresentacao">
             <img src="src/assets/mulheres_em_focco.png" alt="Imagem do Mulheres em Foco" class="projetos__apresentacao__imagem" />
             <h3 class="projetos__apresentacao__subtitulo">Mulheres em Foco</h3>
-            <p class="projetos__apresentacao__texto">E-commerce voltado à capacitação feminina, com instrutoras exclusivamente mulheres. Desenvolvido com React, TypeScript e TailwindCSS no front-end, Spring Boot e MySQL no back-end, seguindo arquitetura MVC e padrões RESTful. 
-                Estrutura responsiva e segura, com foco na experiência do usuário.
+            <p class="projetos__apresentacao__texto">E-commerce responsivo com React + TypeScript, TailwindCSS e Spring Boot. Arquitetura MVC e RESTful.  
                 <a href="https://mulheresemfoco.netlify.app/" target="_blank" rel="noopener noreferrer">Saiba mais</a>.
             </p>
           </article>
@@ -81,8 +106,7 @@
           <article class="projetos__apresentacao">
             <img src="src/assets/monitoramento_tcc.png" alt="Imagem do Monitoramento e Observabilidade" class="projetos__apresentacao__imagem" />
             <h3 class="projetos__apresentacao__subtitulo">Monitoramento e Observabilidade</h3>
-            <p class="projetos__apresentacao__texto">Solução em nuvem para empresa fictícia com orçamento limitado, utilizando AWS CloudWatch, CloudTrail, X-Ray e Managed Grafana. Arquitetura projetada com foco em baixo custo, escalabilidade e observabilidade em tempo real. 
-                Organização e tarefas gerenciadas via Trello com práticas ágeis.
+            <p class="projetos__apresentacao__texto">Stack AWS (CloudWatch, CloudTrail, X-Ray, Grafana). Arquitetura otimizada para baixo custo e escalabilidade.  
               <a href="https://l1nk.dev/monitoramento-e-observabilidade" target="_blank" rel="noopener noreferrer">Saiba Mais</a>.
             </p>
           </article>
@@ -90,10 +114,7 @@
           <article class="projetos__apresentacao">
             <img src="src/assets/amigo_secreto.png" alt="Imagem do Challenge Amigo Secreto" class="projetos__apresentacao__imagem" />
             <h3 class="projetos__apresentacao__subtitulo">Challenge Amigo Secreto</h3>
-            <p class="projetos__apresentacao__texto">Aplicação para sorteio de amigo secreto, criada com HTML, 
-                CSS e JavaScript. Permite cadastrar participantes e realizar o sorteio automaticamente, 
-                respeitando regras de negócio definidas (como evitar que alguém tire a si mesmo). 
-                Projeto desenvolvido para testar funcionalidades, lógica condicional e manipulação de dados.
+            <p class="projetos__apresentacao__texto"> Aplicação em HTML, CSS e JS para sorteio automático. Lógica condicional e manipulação de DOM.
               <a href="https://vmendesdev.github.io/amigo_secreto_challenge_one/" target="_blank" rel="noopener noreferrer">Saiba Mais</a>.
             </p>
           </article>
@@ -102,9 +123,7 @@
             <img src="src/assets/js_game.png" alt="Imagem do JS Game" class="projetos__apresentacao__imagem" />
             <h3 class="projetos__apresentacao__subtitulo">JS Game</h3>
             <p class="projetos__apresentacao__texto">
-              Jogo interativo em navegador criado com HTML, CSS e JavaScript puro. 
-              Projeto para prática de lógica e manipulação de DOM, com interface leve, responsiva e
-               foco em experiência dinâmica do usuário.
+              Jogo interativo em navegador com HTML, CSS e JS puro. Foco em lógica e experiência dinâmica. 
               <a href="https://js-game-one-psi.vercel.app/" target="_blank" rel="noopener noreferrer">Saiba Mais</a>.
             </p>
           </article>
@@ -115,68 +134,62 @@
 
     <!-- Experiências -->
     <section id="experiencias">
-    <h2>Experiências</h2>
+    <h2 class="experiencias__titulo">Experiências</h2>
     <div class="carrossel">
-          <button class="carrossel__btn carrossel__btn--esquerda">❮</button>
         <div class="carrossel__container">
         <article class="experiencias__item">
             <img src="src/assets/empreendedora.jpg" alt="Imagem da Experiência Profissional 1" />
-            <p>
-            Atuação multissetorial em vendas, renegociações e atendimento. Alcancei +100% da meta mensal por 3 meses e otimizei processos com planilhas e apps, reduzindo erros em 60%. Aumentei recompra e faturamento com estratégias digitais.
+            <h3 class="experiencias__titulo">Empreendedora</h3>
+            <p class="experiencias__item"> Atuação em vendas, renegociações e atendimento. Superação de metas (+100%) e otimização de processos digitais.
             </p>
         </article>
 
         <article class="experiencias__item">
             <img src="src/assets/logo mimic.jpg" alt="Imagem da Experiência Profissional 2" />
-            <p>
-            Coordenadora promovida em menos de 90 dias. Liderei equipe de até 8 pessoas com 100% de operação eficaz e reduzi perdas de estoque em 20% com controle preciso e organização de processos.
-            </p>
+            <h3 class="experiencias__titulo">De Auxiliar de Cozinha para Coordenadora</h3>
+            <p class="experiencias__item">Promoção em 90 dias. Liderança de equipe de 8 pessoas.</p>
         </article>
+
 
         <article class="experiencias__item">
             <img src="src/assets/logo polishop.jpg" alt="Imagem da Experiência Profissional 3" />
-            <p>
-            Destaque em vendas com metas superadas em +120% na Polishop. 
-            Aumentei o ticket médio em 25% com abordagem consultiva e 
-            liderei treinamentos na abertura de novas lojas.
-            </p>
+            <h3 class="experiencias__titulo">Vendedora</h3>
+            <p class="experiencias__item">Metas superadas em +120%. Ticket médio ampliado em 25% com abordagem consultiva e treinamentos em novas lojas.</p>
         </article>
+
         </div>
-        <button class="carrossel__btn carrossel__btn--direita">❯</button>
-      
-      
       </div>
     </section>
 
-    <section id="contato">
-        <h2 class="">Contato</h2>
-        <form action="https://formsubmit.co/vanessam.mendes@outlook.com.br" method="POST">
-        <!-- Proteções extras -->
-        <input type="hidden" name="_captcha" value="false">
-        
-        <!-- Campos do formulário -->
-        <input type="text" name="nome" placeholder="Seu nome" required>
-        <input type="email" name="email" placeholder="Seu e-mail" required>
-        <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+     <!-- ---------- CONTATO ---------- -->
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <p>Conecte-se comigo nas redes abaixo ou envie uma mensagem para futuras
+          colaborações.</p>        
+          <br>
+          <form action="https://formsubmit.co/vanessam.mendes@outlook.com.br" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="nome" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+          <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
 
-        <button type="submit">Enviar</button>
-  </form>
-</section>
-
-      </form>
-
-      <div class="apresentacao__links">
-        <p class="apresentacao__links__subtitulo">Ou entre em contato pelas redes:</p>
-        <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/vanessam-mendes" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a class="apresentacao__links__navegacao" href="https://wa.me/5511960001427" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      </div>
-    </section>
+        <div class="apresentacao__links">
+          <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/vanessam-mendes" target="_blank"><img src="src/assets/icons8-linkedin-100.png" alt="LinkedIn"></a>
+          <a class="apresentacao__links__navegacao" href="https://wa.me/5511960001427" target="_blank"><img src="src/assets/icons8-whatsapp-100.png" alt="WhatsApp"></a>
+          <a class="apresentacao__links__navegacao" href="https://www.instagram.com/vanessam.dev/" target="_blank"><img src="src/assets/icons8-instagram-100.png" alt="Instagram"></a>
+          <a class="apresentacao__links__navegacao" href="https://github.com/vanessamdev/" target="_blank"><img src="src/assets/icons8-github-100.png" alt="GitHub"></a>
+        </div>
+      </section>
   </main>
+<!-- ---------- RODAPÉ ---------- -->
+    <footer class="rodape">
+      <p>Criado com 💚 por Vanessa Mendes</p>
+    </footer>
 
-  <footer class="rodape">
-    <p>Criado por: Vanessa Mendes</p>
-  </footer>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
