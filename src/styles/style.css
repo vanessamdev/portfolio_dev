@@ -385,9 +385,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;   /* conteúdo começa do topo */
-  padding: 40px 16px 60px;       /* mais espaço em cima, menos embaixo */        
+  padding: 32px 16px 40px;       /* mais espaço em cima, menos embaixo */        
   align-items: center;                  /* centraliza horizontalmente */
-  min-height: calc(100vh - 140px);      /* altura total menos header e footer fixos */
+  min-height: auto;      /* altura total menos header e footer fixos */
   background-color: var(--cor-destaque);
   text-align: center;   
 }
@@ -472,25 +472,27 @@ form {
   .apresentacao__conteudo {
     flex-direction: column-reverse;
     text-align: center;
-  } 
+  }
 
   .apresentacao__imagem img {
     max-width: 280px;
     margin-top: 1.5rem;
   }
+
   .apresentacao__texto h1 {
     font-size: 2rem;
   }
+
   .cabecalho {
     justify-content: space-between;
   }
 
   .cabecalho__logo img {
-  height: 45px;
-  width: auto;
-  margin-right: auto;
-  cursor: pointer;
-}
+    height: 45px;
+    width: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
 
   .cabecalho__menu {
     display: none;
@@ -512,21 +514,70 @@ form {
     display: flex;
   }
 
-    .projetos__apresentacao {
-    flex: 0 0 calc(100% / 2 - 16px); /* 2 por vez no tablet */
+  /* Projetos: 1 card por vez com carrossel */
+  .carrossel__container {
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
   }
+
+  .projetos__apresentacao {
+    flex: 0 0 100%;   /* ocupa 100% da largura → 1 card por vez */
+    max-width: 100%;
+    scroll-snap-align: center;
+  }
+
   .projetos__grid {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Experiências: empilhadas */
   .experiencias__container {
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .experiencias__item {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  /* Ícones de redes sociais: sempre lado a lado */
+  .apresentacao__links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .projetos__apresentacao {
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+
+  /* Experiências: continua em coluna */
+  .experiencias__container {
+    flex-direction: column;
     align-items: center;
   }
 
   .experiencias__item {
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contato form {
+    max-width: 100%;
+  }
+
+  /* Ícones lado a lado com espaçamento menor */
+  .apresentacao__links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
   }
 }
