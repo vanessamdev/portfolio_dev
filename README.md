@@ -1,66 +1,36 @@
-# Portfólio Pessoal - Desenvolvedora Web
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Este é um projeto de portfólio pessoal desenvolvido em HTML, CSS e JavaScript, com layout moderno, design responsivo e diversas funcionalidades para apresentar habilidades, projetos e informações de contato de forma clara e profissional.
+## Getting Started
 
-## 🚀 Funcionalidades Implementadas
+First, run the development server:
 
-### ✅ Estrutura e Navegação
-- **Layout responsivo** para diferentes tamanhos de tela (desktop, tablet, mobile)
-- **Cabeçalho fixo (header)** com links que levam a seções específicas da página com scroll suave
-- **Correção de sobreposição**: as seções têm espaçamento suficiente para que o cabeçalho fixo não cubra os títulos
-- **Menu com destaque visual em hover**
-- **Footer fixo** no final da tela com estilo coeso ao restante do site
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### ✅ Seções do site
-- **Apresentação pessoal** com foto de perfil, título de destaque e descrição
-- **Sobre mim** com um resumo profissional e destaque de habilidades
-- **Projetos** exibidos em um carrossel horizontal, com imagem, descrição e links
-- **Experiências profissionais** com imagens e textos informativos
-- **Contato** com formulário funcional para envio de mensagens via e-mail
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### ✅ Formulário de Contato (Forms)
-- Integrado com [Formsubmit](https://formsubmit.co) para envio de mensagens diretamente para o e-mail configurado
-- Campos obrigatórios: nome, e-mail, mensagem
-- Redirecionamento automático para página de agradecimento após envio
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### ✅ Acessibilidade e Usabilidade
-- Utilização de cores acessíveis e fontes legíveis
-- Campos de formulário com placeholders e validação nativa
-- Navegação fluida com `scroll-behavior: smooth`
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
----
+## Learn More
 
-## 🧰 Tecnologias Utilizadas
+To learn more about Next.js, take a look at the following resources:
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (mínimo e limpo)**
-- **Formsubmit** (sem necessidade de backend)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
----
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-## ✨ Melhorias Futuras Sugeridas
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- Tema claro/escuro com toggle
-- Animações com JavaScript ou CSS3 para interações
-- Validação de formulário com JavaScript personalizado
-- Integração com API (ex: GitHub para listar projetos automaticamente)
-
----
-
-## 🙋‍♀️ Desenvolvido por
-
-**Vanessa Mendes** - Desenvolvedora Web em transição de carreira para tecnologia, com experiência em HTML, CSS, JavaScript, React, Java, Spring e AWS.
-
-[LinkedIn](https://www.linkedin.com/in/vanessam-mendes/) | [GitHub](https://github.com/vmendesdev)
-
----
-
-## 📬 Contato
-
-Para dúvidas ou sugestões, envie um e-mail diretamente pelo formulário do site, ou para:  
-📧 **vanessam.mendes@outlook.com.br**
-
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
