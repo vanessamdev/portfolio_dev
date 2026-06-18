@@ -5,6 +5,7 @@ const socials = [
   { href: "https://github.com/vanessamdev/", label: "GitHub" },
   { href: "https://www.instagram.com/dev.vanessamendes/", label: "Instagram" },
   { href: "https://wa.me/5511960001427", label: "WhatsApp" },
+  { href: "https://skillsprofile.skillbuilder.aws/user/vanessam-mendes/certification-badges", label: "AWS Skillbuilder" },
 ];
 
 export default function Footer() {
