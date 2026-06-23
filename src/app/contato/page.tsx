@@ -80,7 +80,12 @@ export default function ContatoPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h2 className="text-xl font-semibold mb-6">Envie uma mensagem</h2>
-            <form className="space-y-4">
+            <form
+              action="https://formsubmit.co/comercial@vanessamendes.dev.br"
+              method="POST"
+              className="space-y-4"
+            >
+              <input type="hidden" name="_captcha" value="false" />
               <div>
                 <label htmlFor="name" className="block text-sm text-gray-300 mb-1">
                   Nome
@@ -88,6 +93,8 @@ export default function ContatoPage() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  required
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-brand focus:outline-none transition-colors"
                   placeholder="Seu nome"
                 />
@@ -99,6 +106,8 @@ export default function ContatoPage() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  required
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-brand focus:outline-none transition-colors"
                   placeholder="seu@email.com"
                 />
@@ -109,7 +118,9 @@ export default function ContatoPage() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={5}
+                  required
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-brand focus:outline-none transition-colors resize-none"
                   placeholder="Descreva seu projeto..."
                 />
